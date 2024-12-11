@@ -1,0 +1,356 @@
+@font-face {
+  font-family: 'bunw';
+  src: url('../fonts/bunw/bunigc.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'ardw';
+  src: url('../fonts/ardw/ardchlo.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'mionw';
+  src: url('../fonts/mionw/mionchlo.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'urrw';
+  src: url('../fonts/urrw/urrgc.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'gearw';
+  src: url('../fonts/gearw/gear.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'glanw';
+  src: url('../fonts/glanw/glangc.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'mearw';
+  src: url('../fonts/mearw/mearchlo.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'sraidw';
+  src: url('../fonts/sraidw/SraidchloGC-Regular.woff2') format('woff2');
+}
+
+html{
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'urrw', 'Gaelic Modern', sans-serif; */
+    background-color: #f5f5dc;
+    overflow-x: hidden;
+    font-family: 'urrw';
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin:0;
+}
+
+:root {
+  --form-control-color: rebeccapurple;
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:focus {
+  outline: max(1px, 0.1em) solid currentColor;
+  outline-offset: max(1px, 0.1em);
+}
+
+input[type="search"]::placeholder {
+  color: white;
+  padding:0;
+  margin:0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+.form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 200;
+    margin-right: 0.5em;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 0.8em auto;
+    gap: 0.5em;
+}
+
+.web-title {
+    text-align: center;
+    font-family: 'ardw';
+    width: 96%;
+    padding: 10px;
+    background-color: color(srgb 0.88 0.8365 0.6864 / 0.76);
+    top: -7px;
+    z-index: 2;
+    box-shadow: 0px 0px 2px 1px #0000001a;
+    border-radius: 5px;
+}
+
+.web-title > h2 {
+  margin: 5px 50px 5px;
+  font-family: 'ardw';
+  font-size: 2.5rem;
+  color: #13671e;
+}
+
+
+.buy-me {
+  background-color: white;
+  display: block;
+  border-radius: 24px;
+  width: fit-content;
+  padding: 0px 8px 3px 9px;
+  margin: 0 auto;
+}
+
+.mick-icon{
+  background-color:white;
+  display: inline-block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  float: left;
+  position: relative;
+}
+
+.mick-icon span {
+    background: url(../img/mickicon.png);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.mick-icon:hover {
+  cursor: pointer;
+}
+
+#cashApp {
+  background: url('../img/cashapp.png');
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#payPal {
+  background: url('../img/paypal.png');
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#revolut {
+  background: url('../img/revolut.png');
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#cashApp, #payPal, #revolut:hover {
+  cursor: pointer;
+}
+
+.irish-font {
+  font-size: 1.6rem;
+  font-family:'mionw', sans-serif;
+}
+
+
+/* Style the main container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 96%;
+}
+/* Apps section */
+.app-container {
+  padding: 36px;
+  border-radius: 15px;
+  box-shadow: 7px 7px 9px 1px #00000061;
+  background-color: color(srgb 0.88 0.8365 0.6864 / 0.76);
+}
+
+.app-container .first-set {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: row; /* Ensures items are aligned horizontally */
+  justify-content: center; /* Centers the icons horizontally within the container */
+  gap: 20px; /* Adds spacing between the icons (adjust as needed) */
+}
+
+.apps {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.app-header {
+  margin: 5px 50px 15px;
+  font-family: 'urrw';
+  font-size: 2.5rem;
+  color: #b36f1b;
+  text-shadow: 6px 4px #00000036;
+  text-align: center;
+}
+
+.apps-wrapper img {
+  padding: 1.25rem;
+}
+
+#downIcon {
+  width: 1rem;
+  height: 1rem;
+  margin: 0px 0px 0px 5px;
+  display: inline-block;
+  border-radius: 100%;
+}
+
+.img-icon {
+  display: flex;
+  flex-direction: column; /* Stacks the image and text vertically */
+  align-items: center; /* Centers the text horizontally under the image */
+  text-align: center;
+  gap: 10px; /* Adds spacing between the image and text */
+}
+
+.icon {
+  max-width: 200px; /* Sets a maximum size for large screens */
+  width: 100%; /* Ensures it scales within the container */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 19px;
+  box-shadow: 7px 7px 9px 1px #00000061;
+}
+
+.icon-text {
+  font-family: 'ardw', sans-serif; /* Use your preferred font */
+  font-size: 1.2rem; /* Adjust the text size as needed */
+  color: #13671e; /* Matches the theme color */
+  text-shadow: 4px 2px 2px #00000036;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) { /* Applies styles for devices with a screen width of 768px or smaller */
+  .icon {
+    max-width: 200px; /* Reduce image size for medium screens */
+  }
+
+  .icon-text {
+    font-size: 1rem; /* Adjust text size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) { /* Applies styles for very small screens */
+  .icon {
+    max-width: 150px; /* Further reduce the image size */
+  }
+
+  .icon-text {
+    font-size: 0.8rem; /* Further adjust text size */
+  }
+}
+/* Apps section ends */
+
+.custom-input {
+    color: black;
+    font-size: 0.6rem;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff5e;
+    padding: 5px 5px 5px 8px;
+    border: 1px solid #595959;
+}
+
+.custom-input:hover {
+  background-color: #4588ff;
+  color: white;
+  cursor: pointer;
+}
+
+.descriptions{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.desc-column{
+  flex: 1 1 160px;
+  border-radius: 5px;
+  background-color: rgb(18 103 30 / 11%);
+  padding: 9px;
+  text-align: justify;
+}
+
+.yt{
+  float:left;
+  margin-top: 18px;
+  margin-left: 3px;
+  font-family: 'urrw';
+}
