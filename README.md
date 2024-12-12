@@ -1,14 +1,18 @@
 # Welcome to Uncle_Mick's Irish apps!
 
 Is mise Mícheál Ó Cianáin (Michael Keenan)
+
 I like to build **free** tools to help with learning Irish!
+
 I usually share my progress on my [YouTube](https://www.youtube.com/@UncleMick)
 
 *If you want to hire me, please reach out!*
 
 ## IrishApps homepage
 
-[Click here](https://mkeenan-kdb.github.io/IrishApps/) to access the IrishApps homepage. You can then easily navigate to both **seanchló typer** and **Teach na nGael**
+[Click here](https://mkeenan-kdb.github.io/IrishApps/) to access the IrishApps homepage. 
+
+You can then easily navigate to both **seanchló typer** and **Teach na nGael**
 
 ## Apps and descriptions
 
