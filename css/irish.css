@@ -137,8 +137,8 @@ input[type="search"]::-webkit-search-results-decoration {
     font-family: 'ardw';
     width: 96%;
     padding: 10px;
+    position: fixed;
     background-color: color(srgb 0.88 0.8365 0.6864 / 0.76);
-    top: -7px;
     z-index: 2;
     box-shadow: 0px 0px 2px 1px #0000001a;
     border-radius: 5px;
@@ -245,7 +245,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .apps {
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 111px;
 }
 
 .app-header {
@@ -275,6 +275,10 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center; /* Centers the text horizontally under the image */
   text-align: center;
   gap: 10px; /* Adds spacing between the image and text */
+}
+
+.img-icon>a>img:hover{
+  border: 4px solid #eb870e;
 }
 
 .icon {
