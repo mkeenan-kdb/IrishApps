@@ -354,3 +354,20 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-left: 3px;
   font-family: 'urrw';
 }
+
+#author:hover{
+  color:red;
+}
+
+#author-head{
+  display:none;
+}
+
+#author:hover + #author-head{
+  display:flex;
+}
+
+#author-head>img{
+  height: 100px;
+  margin-top: -200px;
+}
