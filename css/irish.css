@@ -136,7 +136,7 @@ input[type="search"]::-webkit-search-results-decoration {
     text-align: center;
     font-family: 'ardw';
     width: 96%;
-    padding: 10px 106px 10px 10px;
+    padding: 10px 30px 10px 0px;
     position: fixed;
     background-color: color(srgb 0.88 0.8365 0.6864 / 0.76);
     z-index: 2;
