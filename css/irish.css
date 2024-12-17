@@ -305,7 +305,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-family: 'ardw', sans-serif; /* Use your preferred font */
   font-size: 1.2rem; /* Adjust the text size as needed */
   color: #13671e; /* Matches the theme color */
-  text-shadow: 4px 2px 2px #d2d2d2;
+  text-shadow: 4px 2px 2px #909090;
   margin: 0;
   padding: 0;
 }
@@ -359,7 +359,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .desc-column{
   flex: 1 1 160px;
   border-radius: 5px;
-  background-color: rgb(18 103 30 / 11%);
+  background-color:rgb(18 103 30 / 11%);
   padding: 9px;
   text-align: justify;
 }
