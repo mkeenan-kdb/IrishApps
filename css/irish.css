@@ -258,6 +258,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .apps {
   text-align: center;
   margin-top: 111px;
+  margin-bottom: 13px;
 }
 
 .app-header {
